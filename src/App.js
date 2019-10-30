@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import Nav from './components/Nav';
+import Recipes from './components/Recipes';
+import AddRecipe from './components/AddRecipe';
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
           <Nav />
           <Switch>
             <Route exact path="/" component={Recipes} />
-            <Route exact path="/add-recipe" component={NewRecipeForm} />
+            <Route exact path="/addrecipe" component={AddRecipe} />
           </Switch>
         </div>
       </Router>
